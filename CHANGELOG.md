@@ -1,5 +1,125 @@
 # Changelog
 
+## 🌅 0.6.0
+
+- ### ✨ Features
+
+  - **Pre-build before wasm-pack publish - [csmoe], [issue/438] [pull/444]**
+
+    [issue/438]: https://github.com/rustwasm/wasm-pack/issues/438
+    [pull/444]: https://github.com/rustwasm/wasm-pack/pull/444
+
+  - **Generate self-.gitignore as part of pkg folder - [RReverser], [pull/453]**
+
+    [RReverser]: https://github.com/RReverser
+    [pull/453]: https://github.com/rustwasm/wasm-pack/pull/453
+
+  - **Add three build profiles and infrastructure for their toml config - [fitzgen], [issue/153] [issue/160] [pull/440]**
+
+    [issue/153]: https://github.com/rustwasm/wasm-pack/issues/153
+    [issue/160]: https://github.com/rustwasm/wasm-pack/issues/160
+    [pull/440]: https://github.com/rustwasm/wasm-pack/pull/440
+
+  - **Support cargo workspaces - [fitzgen], [pull/430]**
+
+    [pull/430]: https://github.com/rustwasm/wasm-pack/pull/430
+
+  - **Use a global cache for all downloaded binaries - [alexcrichton], [pull/426]**
+
+    [pull/426]: https://github.com/rustwasm/wasm-pack/pull/426
+
+  - **Rename `--debug` to `--dev` to match `cargo` - [fitzgen], [pull/439]**
+
+    [pull/439]: https://github.com/rustwasm/wasm-pack/pull/439
+
+- ### 🤕 Fixes
+
+  - **Validate `--target` argument - [csmoe], [issue/483] [pull/484]**
+
+    [issue/483]: https://github.com/rustwasm/wasm-pack/issues/483
+    [pull/484]: https://github.com/rustwasm/wasm-pack/pull/484
+
+  - **Fix login - [danwilhem], [issue/486] [pull/487]**
+
+    [danwilhem]: https://github.com/danwilhem
+    [issue/486]: https://github.com/rustwasm/wasm-pack/issues/486
+    [pull/487]: https://github.com/rustwasm/wasm-pack/pull/487
+
+  - **Eliminate unecessary escaping in build success terminal output - [huangjj27], [issue/390] [pull/396]**
+
+    [issue/390]: https://github.com/rustwasm/wasm-pack/issues/390
+    [pull/396]: https://github.com/rustwasm/wasm-pack/pull/396
+
+  - **Copy license file(s) to out directory - [mstallmo], [issue/407] [pull/411]**
+
+    [issue/407]: https://github.com/rustwasm/wasm-pack/issues/407
+    [pull/411]: https://github.com/rustwasm/wasm-pack/pull/411
+
+  - **Fix paths on Windows - [xmclark], [issue/380] [pull/389]**
+
+    [issue/380]: https://github.com/rustwasm/wasm-pack/issues/380
+    [pull/389]: https://github.com/rustwasm/wasm-pack/pull/389
+
+  - **Don't require cdylib crate-type for testing - [alexcrichton], [pull/442]**
+
+    [pull/442]: https://github.com/rustwasm/wasm-pack/pull/442
+
+  - **Fix wasm-bindgen if lib is renamed via `lib.name` - [alexcrichton], [issue/339] [pull/435]**
+
+    [issue/339]: https://github.com/rustwasm/wasm-pack/issues/339
+    [pull/435]: https://github.com/rustwasm/wasm-pack/pull/435
+
+  - **Print standard error only once for failing commands - [fitzgen], [issue/422] [pull/424]**
+
+    [issue/422]: https://github.com/rustwasm/wasm-pack/issues/422
+    [pull/424]: https://github.com/rustwasm/wasm-pack/pull/424
+
+  - **Add no-modules to --target flag's help text - [fitzgen], [issue/416] [pull/417]**
+
+    [issue/416]: https://github.com/rustwasm/wasm-pack/issues/416
+    [pull/417]: https://github.com/rustwasm/wasm-pack/pull/417
+
+- ### 🛠️ Maintenance
+
+  - **Move binary installation to its own crate - [drager], [issue/384] [pull/415]**
+
+    [drager]: https://github.com/drager
+    [issue/384]: https://github.com/rustwasm/wasm-pack/issues/384
+    [pull/415]: https://github.com/rustwasm/wasm-pack/pull/415
+
+  - **Replace internal `Error` with `failure::Error` - [alexcrichton], [pull/436]**
+
+    [pull/436]: https://github.com/rustwasm/wasm-pack/pull/436
+
+  - **Update `mdbook` version used by Travis - [fitzgen], [pull/433]**
+
+    [pull/433]: https://github.com/rustwasm/wasm-pack/pull/433
+
+  - **Read the `Cargo.toml` file only once - [fitzgen], [issue/25] [pull/431]**
+
+    [issue/25]: https://github.com/rustwasm/wasm-pack/issues/25
+    [pull/431]: https://github.com/rustwasm/wasm-pack/pull/431
+
+  - **Use `name` field for Travis CI jobs - [fitzgen], [pull/432]**
+
+    [pull/432]: https://github.com/rustwasm/wasm-pack/pull/432
+
+  - **Add a test for build command - [huangjj27], [pull/408]**
+
+    [huangjj27]: https://github.com/huangjj27
+    [pull/408]: https://github.com/rustwasm/wasm-pack/pull/408
+
+  - **Fix typo in test function name for copying the README - [mstallmo], [pull/412]**
+
+    [pull/412]: https://github.com/rustwasm/wasm-pack/pull/412
+
+- ### 📖 Documentation
+
+  - **Minor docs updates - [fitzgen], [issue/473] [pull/485]**
+
+    [issue/473]: https://github.com/rustwasm/wasm-pack/issues/473
+    [pull/485]: https://github.com/rustwasm/wasm-pack/pull/485
+
 ## 🌄 0.5.1
 
 - ### 🤕 Fixes
